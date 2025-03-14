@@ -6,6 +6,18 @@
 <body>
     <h1>My clicker game!</h1>
     <h2>Creator:Szymon Miśta</h2>
-    <img src="https://img.freepik.com/premium-psd/soccer-ball-isolated-transparent-background_220739-18465.jpg?w=1380" >
+    <img id='img' src="https://www.opengift.pl/f/6215aaa9e1110ba8bcce6f20994b1b0f1d29a87d/500/pilka-nozna-215cm-bialyczarny-MO9007-33.jpg" >
+    <h3 id='score'>blabla</h3>
 </body>
+<script> 
+    let score=1;
+    const scoreHeader = document.getElementById('score');
+    const clickImg = document.getElementById('img');
+    function addScore() 
+    {
+        score++;
+        scoreHeader.textContent="score="+score;
+    }
+    clickImg.addEventListener('click', addScore);
+</script>
 </html>
