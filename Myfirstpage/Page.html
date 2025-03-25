@@ -10,12 +10,15 @@
     <div>
         <b>Multiplier x2</b>
         <button id='multiplier'> BUY </button>
+        <b id='price'> price=100 </b>
     </div>
-    <h3 id='score'>blabla</h3>
+    <h3 id='score'>0</h3>
 </body>
 <script> 
+    let price=100;
     let score=1;
     let multiplier=1;
+    const priceValue = document.getElementById('price');
     const scoreHeader = document.getElementById('score');
     const clickImg = document.getElementById('img');
     const clickMultiplierButton = document.getElementById('multiplier');
@@ -23,11 +26,20 @@
     {
         score = score + multiplier;
         scoreHeader.textContent="score="+score;
-        
     }
     function Multiplier()
     {
-        multiplier = multiplier *2;
+        if (score >= price) 
+        {
+            score = score - price;
+            multiplier = multiplier *2;
+            price = price * 2;
+            priceValue.textContent="price="+price;
+        } else 
+        {
+            console.log("Nie masz wystarczającej liczby punktów.");
+        }
+      
     }
     clickImg.addEventListener('click', addScore);
     clickMultiplierButton.addEventListener('click', Multiplier);
