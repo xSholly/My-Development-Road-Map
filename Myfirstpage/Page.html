@@ -39,7 +39,8 @@
         {
             console.log("Nie masz wystarczającej liczby punktów.");
         }
-      
+        scoreHeader.textContent = "score=" + score;
+        priceValue.textContent = "price=" + price;
     }
     clickImg.addEventListener('click', addScore);
     clickMultiplierButton.addEventListener('click', Multiplier);
