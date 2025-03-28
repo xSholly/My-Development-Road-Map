@@ -2,12 +2,91 @@
 <html>
 <head>
     <title>Football clicker</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 
+        {
+            color: #333;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        h2 
+        {
+            color: #555;
+            font-size: 1.5rem;
+        }
+
+        img 
+        {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            border: 5px solid black; 
+            border-radius: 10px;
+        }
+
+        img:active 
+        {
+            transform: scale(1.1);
+        }
+
+        #hiddenDiv
+        {
+            background-color: white;
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: fit-content;
+        }
+
+        #multiplier 
+        {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        #multiplier:disabled {
+            background-color: gray;  
+            cursor: not-allowed;  
+            opacity: 0.6;  
+        }
+
+        #multiplier:hover 
+        {
+            background-color: #218838;
+        }
+
+        #score 
+        {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #000;
+            margin-top: 20px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>My clicker game!</h1>
+    <h1> My clicker game!</h1>
     <h2>Creator:Szymon Miśta</h2>
     <img id='img' src="https://www.opengift.pl/f/6215aaa9e1110ba8bcce6f20994b1b0f1d29a87d/500/pilka-nozna-215cm-bialyczarny-MO9007-33.jpg" >
-    <div>
+    <div id='hiddenDiv'hidden>
         <b>Multiplier x2</b>
         <button id='multiplier'> BUY </button>
         <b id='price'> price=100 </b>
@@ -22,10 +101,16 @@
     const scoreHeader = document.getElementById('score');
     const clickImg = document.getElementById('img');
     const clickMultiplierButton = document.getElementById('multiplier');
+    const divHidden = document.getElementById('hiddenDiv');
     function addScore() 
     {
         score = score + multiplier;
         scoreHeader.textContent="score="+score;
+        if(score >=price)
+        {
+            divHidden.hidden = false;
+            clickMultiplierButton.disabled = false;
+        }
     }
     function Multiplier()
     {
@@ -34,13 +119,14 @@
             score = score - price;
             multiplier = multiplier *2;
             price = price * 2;
-            priceValue.textContent="price="+price;
-        } else 
+            priceValue.textContent="price="+ price;
+            scoreHeader.textContent = "score=" + score;
+        } 
+        
+        if (score < price)
         {
-            console.log("Nie masz wystarczającej liczby punktów.");
+            clickMultiplierButton.disabled = true;
         }
-        scoreHeader.textContent = "score=" + score;
-        priceValue.textContent = "price=" + price;
     }
     clickImg.addEventListener('click', addScore);
     clickMultiplierButton.addEventListener('click', Multiplier);
