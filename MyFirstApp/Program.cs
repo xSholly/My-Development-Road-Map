@@ -6,12 +6,31 @@ class Program
     {  
         Console.Write("Give me one number: ");
         string number = Console.ReadLine();
-        int parsednumber = int.Parse(number); 
+        float parsednumber = float.Parse(number); 
         Console.WriteLine($"your number,  {parsednumber}!");
         Console.Write("Give me second number: ");
         string number2 = Console.ReadLine();
-        int parsednumber2 = int.Parse(number2);
+        float parsednumber2 = float.Parse(number2);
         Console.WriteLine($"your number,  {parsednumber2}!");
-        Console.WriteLine($"Sume,  {parsednumber + parsednumber2}!");
+         
+        Console.WriteLine("Choose one of available operations [+, -,  *, /]");
+        string operations = Console.ReadLine();
+        Console.WriteLine($"You chosen this operation, {operations}!" );
+        
+         if (operations == "+")
+            Console.WriteLine($"Sum,  {parsednumber + parsednumber2}!");
+        else if (operations == "-")
+            Console.WriteLine($"Sub,  {parsednumber - parsednumber2}!");
+        else if (operations == "*")
+            Console.WriteLine($"Multip,  {parsednumber * parsednumber2}!");
+        else if (operations == "/")
+         {
+            if (parsednumber2 != 0)
+                Console.WriteLine($"Division: {parsednumber / parsednumber2}");
+            else
+                Console.WriteLine("Cannot divide by zero!");
+         }
+        else
+            Console.Write("wrong operation provided");
     }
 }
