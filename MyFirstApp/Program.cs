@@ -17,20 +17,26 @@ class Program
         string operations = Console.ReadLine();
         Console.WriteLine($"You chosen this operation, {operations}!" );
         
-         if (operations == "+")
-            Console.WriteLine($"Sum,  {parsednumber + parsednumber2}!");
-        else if (operations == "-")
-            Console.WriteLine($"Sub,  {parsednumber - parsednumber2}!");
-        else if (operations == "*")
-            Console.WriteLine($"Multip,  {parsednumber * parsednumber2}!");
-        else if (operations == "/")
-         {
-            if (parsednumber2 != 0)
-                Console.WriteLine($"Division: {parsednumber / parsednumber2}");
-            else
-                Console.WriteLine("Cannot divide by zero!");
-         }
-        else
-            Console.Write("wrong operation provided");
-    }
+          switch (operation)
+        {
+            case "+":
+                Console.WriteLine($"Sum: {parsednumber + parsednumber2}");
+                break;
+            case "-":
+                Console.WriteLine($"Sub: {parsednumber - parsednumber2}");
+                break;
+            case "*":
+                Console.WriteLine($"Multiplication: {parsednumber * parsednumber2}");
+                break;
+            case "/":
+                if (parsednumber2 != 0)
+                    Console.WriteLine($"Division: {parsednumber / parsednumber2}");
+                else
+                    Console.WriteLine("Cannot divide by zero!");
+                break;
+            default:
+                Console.WriteLine("Wrong operation provided");
+                break;
+        }
+    } 
 }
