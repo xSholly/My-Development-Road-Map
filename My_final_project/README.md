@@ -23,3 +23,29 @@ Ideas:
     2. name of the game (x)
     3. special techniques (x)
     4. 3D or 2D (x)
+  
+  # special techniques
+  ## list
+
+  1. god hand - goalkeeper technique ( big gold hand ) - power 20 stamina cost 10 
+  2. fire storm - shoot technique ( fire blast around ) - power 20 stamina cost 10
+  3. meteor blade - shoot technique ( colorfull ball ) - power 40 stamina cost 30 
+  4. beast fang - goalkeeper technique ( wolf bite ball ) - power 60 stamina cost 80
+  5. snow land - reciver the ball technique ( attcaking player freeze ) - power 30 stamina cost 15
+
+  ## notes
+  - when the power of special techniqes is equal we should compare the current level of players stamina and choose higher value
+  - to trigger ST player needs to pay the stamina cost
+  - special technique is assigned to specific player (predifined)
+  
+  # models
+  
+  ## player
+  - stamina [int]
+  - name [string]
+  - position [string?]
+  ## special techiques
+  - power [int]
+  - name [string]
+  - types goalkeeper technique, shoot technique, defense  technique, movement technique 
+  
