@@ -3,7 +3,7 @@ using System;
 class Program
 {
     static void Main(string[] args)
-    {  
+    {
         //      Console.Write("Give me one number: ");
         //     string number = Console.ReadLine();
         //     float parsednumber = float.Parse(number); 
@@ -12,11 +12,11 @@ class Program
         //     string number2 = Console.ReadLine();
         //     float parsednumber2 = float.Parse(number2);
         //     Console.WriteLine($"your number,  {parsednumber2}!");
-            
+
         //     Console.WriteLine("Choose one of available operations [+, -,  *, /]");
         //     string operations = Console.ReadLine();
         //     Console.WriteLine($"You chosen this operation, {operations}!" );
-            
+
         //       switch (operation)
         //     {
         //         case "+":
@@ -39,22 +39,22 @@ class Program
         //             break;
         //   } 
 
-        List <string> names = new List <string> { "Messi", "Ronaldo" , "Neymar" , "Lewandowski" , "Zidan"};
+        List<string> names = new List<string> { "Messi", "Ronaldo", "Neymar", "Lewandowski", "Zidan" };
 
-        foreach(string name in names )
+        foreach (string name in names)
         {
             Console.WriteLine($"Hello: {name}");
         }
         Console.WriteLine("**");
         for (int i = 0; i < names.Count; i++)
         {
-             
-             if(i % 2 == 0)
-             {
+
+            if (i % 2 == 0)
+            {
                 Console.WriteLine($"Hello: {names[i]}");
-             }
+            }
         }
-        
+
         //next lesson
         int[] multiples = new int[30];
 
@@ -66,24 +66,38 @@ class Program
 
         int count = 7;
 
-        while (count > 0 )
+        while (count > 0)
         {
             count--;
             Console.WriteLine($"Counting down: {count}");
         }
 
-            Console.WriteLine($"Final: {count}");
+        Console.WriteLine($"Final: {count}");
 
-        int sum = 0;
-        int number = 1000;
+        int moneyspend = 0;
+        int price = 99;
+        int money = 100;
 
-        while (sum < 100)
+        while (price + moneyspend <= money)
         {
-            sum = sum + number;
-            number++;
-        }  
-        Console.WriteLine($"Sume: {number}");
-        Console.WriteLine($"Sume: {sum}");
+      //      int moneyleft = money - moneyspend;
+       //     if (price > moneyleft)
+      //      {
+       //         break;
+        //    }
+       //     Console.WriteLine($"Moneyleft: {moneyleft}, nextprice :{price}, aftertran:{moneyleft - price}");
+            moneyspend = moneyspend + price;
+            price++;
+        }
+        Console.WriteLine($"Final Price: {price}");
+        Console.WriteLine($"Sume: {moneyspend}");
+        
+
+
+
+
+
+
     }   
 
 }
