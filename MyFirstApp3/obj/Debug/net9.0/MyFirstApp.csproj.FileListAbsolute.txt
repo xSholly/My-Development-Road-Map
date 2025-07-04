@@ -1,0 +1,15 @@
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\bin\Debug\net9.0\MyFirstApp.exe
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\bin\Debug\net9.0\MyFirstApp.deps.json
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\bin\Debug\net9.0\MyFirstApp.runtimeconfig.json
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\bin\Debug\net9.0\MyFirstApp.dll
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\bin\Debug\net9.0\MyFirstApp.pdb
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\MyFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\MyFirstApp.AssemblyInfoInputs.cache
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\MyFirstApp.AssemblyInfo.cs
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\MyFirstApp.csproj.CoreCompileInputs.cache
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\MyFirstApp.sourcelink.json
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\MyFirstApp.dll
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\refint\MyFirstApp.dll
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\MyFirstApp.pdb
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\MyFirstApp.genruntimeconfig.cache
+D:\GitHub repozytorium\My-Development-Road-Map\MyFirstApp\obj\Debug\net9.0\ref\MyFirstApp.dll

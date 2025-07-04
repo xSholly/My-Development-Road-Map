@@ -1,0 +1,15 @@
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\WarriorBattle.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\WarriorBattle.AssemblyInfoInputs.cache
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\WarriorBattle.AssemblyInfo.cs
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\WarriorBattle.csproj.CoreCompileInputs.cache
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\WarriorBattle.sourcelink.json
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\bin\Debug\net9.0\WarriorBattle.exe
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\bin\Debug\net9.0\WarriorBattle.deps.json
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\bin\Debug\net9.0\WarriorBattle.runtimeconfig.json
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\bin\Debug\net9.0\WarriorBattle.dll
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\bin\Debug\net9.0\WarriorBattle.pdb
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\WarriorBattle.dll
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\refint\WarriorBattle.dll
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\WarriorBattle.pdb
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\WarriorBattle.genruntimeconfig.cache
+D:\GitHub repozytorium\My-Development-Road-Map\WarriorBattle\obj\Debug\net9.0\ref\WarriorBattle.dll
